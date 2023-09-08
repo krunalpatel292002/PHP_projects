@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Travel Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to GDEC US Trip Form</h1>
+        <p>Enter your details and submit this form to confirm your Participation in the Trip</p>
+    </div>
+    <form name="form1" action="index.php" method="post">Name:<input type="text" name="name" id="name" placeholder="Enter Your Name">
+        <br>
+        Age:<input type="text" name="age" id="age" placeholder="Enter Your Age">
+        <br>
+    <div class="gender">
+        Gender: <label for="male" >
+            <input type="radio" name="gender" id="gender"  value="male">male
+        </label>
+        <label for="female">
+            <input type="radio" name="gender" id="gender" value="female" >female
+        </label>
+    </div>
+    <br>
+    email:
+    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+    <br>
+    Ph. No.:
+    <input type="phone" name="phone" id="phone" placeholder="Enter Your Phone Number">
+    <br>
+    Description:
+     <textarea name="desc" id="desc" cols="30" rows="10" placeholder="You can Enter any other Info. "></textarea>
+     <br>
+     <button class="btn">submit</button>
+     <button class="btn">Reset</button>
+    </form>
+    
+<script src="index.js"></script>
+<!-- INSERT INTO `trip` (`sno`, `name`, `age`, `gender`, `email`, `phone`, `other`, `dt`) VALUES ('1', 'Krunal', '20', 'male', 'krunalpatel@gmail.com', '8758808208', 'This Is my first PHP website.', current_timestamp()); -->
+</body>
+</html>
